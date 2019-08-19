@@ -27,18 +27,24 @@ class MusicTrackDetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupUI()
+    self.setupUI()
   }
   
   func setupUI() {
-    guard let track = track else { return }
-    title = track.trackName
-    trackLabel.text = track.trackName
-    artworkImageView.kf.setImage(with: URL(string: track.artworkUrl))
-    releaseDateLabel.text = formattedDate(from: track.releaseDate)
-    genreLabel.text = track.primaryGenreName
-    trackPriceLabel.text = "\(track.trackPrice) \(track.currency)"
-    collectionPriceLabel.text = "\(track.collectionPrice) \(track.currency)"
+    print("SetupUI")
+//    guard let track = track else {
+//        print("Fails")
+//        return
+//    }
+    print("********")
+    print(track)
+    title = track?.trackName
+    trackLabel.text = track?.trackName
+//    artworkImageView.kf.setImage(with: URL(string: track?.artworkUrl))
+//    releaseDateLabel.text = formattedDate(from: track?.releaseDate)
+    genreLabel.text = track?.primaryGenreName
+    trackPriceLabel.text = "\(track?.trackPrice) \(track?.currency)"
+    collectionPriceLabel.text = "\(track?.collectionPrice) \(track?.currency)"
   }
   
   private func formattedDate(from dateString: String) -> String {
