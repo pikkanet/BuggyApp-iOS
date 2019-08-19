@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var mNameTextField:UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.mNameTextField.delegate = self
         // Do any additional setup after loading the view.
     }
     @IBAction func onTextChanged(_ sender: Any) {
@@ -28,6 +28,21 @@ class ThirdViewController: UIViewController {
             print(self.mNameTextField.text)
             targetVC.message = self.mNameTextField.text
         }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        print("GG")
+        //textField code
+        
+        textField.resignFirstResponder()  //if desired
+        performAction()
+        return true
+    }
+    
+    func performAction() {
+        //action events
+        print("GG")
     }
     
 }

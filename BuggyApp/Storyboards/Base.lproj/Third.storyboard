@@ -56,19 +56,38 @@
                     <view key="view" contentMode="scaleToFill" id="diO-36-DIv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi5-CP-d7h">
+                                <rect key="frame" x="78" y="352" width="258" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPA-5b-5AS">
+                                <rect key="frame" x="78" y="390" width="258" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qXI-L5-afu"/>
                     </view>
+                    <connections>
+                        <outlet property="mNameLabel" destination="TPA-5b-5AS" id="Kj2-JH-ur4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRv-nV-xNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2469" y="1018"/>
+            <point key="canvasLocation" x="2466.666666666667" y="1017.8571428571428"/>
         </scene>
-        <!--Third-->
+        <!--Profile-->
         <scene sceneID="oyB-S5-CR8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Su-Lu-zS9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Third" image="first" id="hjw-IW-tD5"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-contact_card_filled" selectedImage="icons8-contact_card_filled" id="hjw-IW-tD5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b3f-QA-lzv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -85,6 +104,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="icons8-contact_card_filled" width="25" height="25"/>
     </resources>
 </document>

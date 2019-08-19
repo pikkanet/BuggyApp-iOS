@@ -10,6 +10,8 @@ import UIKit
 
 class ThirdDetailViewController: UIViewController {
     
+    @IBOutlet weak var mNameLabel:UILabel!
+    
     var message:String?
 
     override func viewDidLoad() {

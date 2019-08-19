@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Country List-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="BuggyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Country List" image="icons8-earth_planet" selectedImage="icons8-earth_planet" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="tableView" destination="IGm-in-Zsz" id="7PY-DR-0y4"/>
                     </connections>
@@ -95,6 +95,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="icons8-earth_planet" width="25" height="25"/>
     </resources>
 </document>
