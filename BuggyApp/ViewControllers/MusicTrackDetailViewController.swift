@@ -32,19 +32,19 @@ class MusicTrackDetailViewController: UIViewController {
   
   func setupUI() {
     print("SetupUI")
-//    guard let track = track else {
-//        print("Fails")
-//        return
-//    }
+    guard let track = track else {
+        print("Fails")
+        return
+    }
     print("********")
     print(track)
-    title = track?.trackName
-    trackLabel.text = track?.trackName
-//    artworkImageView.kf.setImage(with: URL(string: track?.artworkUrl))
-//    releaseDateLabel.text = formattedDate(from: track?.releaseDate)
-    genreLabel.text = track?.primaryGenreName
-    trackPriceLabel.text = "\(track?.trackPrice) \(track?.currency)"
-    collectionPriceLabel.text = "\(track?.collectionPrice) \(track?.currency)"
+    title = track.trackName
+    trackLabel.text = track.trackName
+    artworkImageView.kf.setImage(with: URL(string: track.artworkUrl))
+    releaseDateLabel.text = formattedDate(from: track.releaseDate)
+    genreLabel.text = track.primaryGenreName
+    trackPriceLabel.text = "\(track.trackPrice) \(track.currency)"
+    collectionPriceLabel.text = "\(track.collectionPrice) \(track.currency)"
   }
   
   private func formattedDate(from dateString: String) -> String {
